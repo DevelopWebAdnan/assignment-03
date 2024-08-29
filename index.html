@@ -112,7 +112,7 @@
               <img class="mx-auto" src="./assets/banner.png" alt="">
               <h1 class="text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
               <p class="font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wool, sleek metal and large windows that flood the space with natural light.</p>
-              <a class="btn mt-8 w-full md:w-52 bg-rinterio-secondary rounded-3xl font-extrabold text-sm">Book Consult
+              <a class="btn btn-block mt-8 md:w-52 bg-rinterio-secondary rounded-3xl font-extrabold text-sm">Book Consult
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-rinterio-primary rounded-full p-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
               </svg>
@@ -121,36 +121,42 @@
      </header>
 
      <!-- Main Section -->
-      <main>
+      <main class="md:container mx-auto">
         <!-- About Us section starts -->
-         <div>
-          <div>
+         <section class="flex flex-col md:flex-row gap-9 my-8 md:my-24 mx-5">
+
+          <div class="relative space-y-6">
             <!-- Text content -->
-             <button class="btn">About Us</button>
-             <h2>We design thoughtful, liveable spaces</h2>
-             <p class="font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wool, sleek metal accents.</p>
+            <img class="absolute -left-12 -top-10 hidden md:block" src="assets/Vector.png" alt="">
+             <button class="btn btn-sm bg-white rounded-3xl">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+            About Us</button>
+             <h2 class="text-4xl text-center md:text-left font-bold">We design thoughtful, liveable spaces</h2>
+             <p class=" text-center md:text-left font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wool, sleek metal accents.</p>
              <!-- Card 1 -->
-             <div>
+             <div class="flex gap-6 p-6 bg-white rounded-2xl">
               <div>
                 <!-- Image content -->
                  <img src="assets/commercial.png" alt="">
               </div>
               <div>
                 <!-- Text content -->
-                 <h3>Commercial</h3>
+                 <h3 class="text-lg font-extrabold mb-3">Commercial</h3>
                  <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
 
               </div>
              </div>
              <!-- Card 2 -->
-             <div>
+             <div class="flex gap-6 p-6 bg-white rounded-2xl">
               <div>
                 <!-- Image content -->
                  <img src="assets/residential.png" alt="">
               </div>
               <div>
                 <!-- Text content -->
-                 <h3>Residential</h3>
+                 <h3 class="text-lg font-extrabold mb-3">Residential</h3>
                  <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
 
               </div>
@@ -161,7 +167,7 @@
             <!-- Image content -->
              <img src="assets/Rectangle.png" alt="">
           </div>
-         </div>
+         </section>
 
       </main>
       <!-- Footer Section -->
