@@ -24,7 +24,8 @@
             colors: {
               clifford: '#da373d',
               'rinterio-primary': 'rgb(171, 239, 95)',
-              'rinterio-secondary': 'rgba(171, 239, 95, 0.5)',
+              'rinterio-banner': 'rgba(171, 239, 95, 0.5)',
+              'rinterio-secondary': 'rgba(171, 239, 95, 0.2)',
               card1: 'rgb(231, 193, 211)',
               card2: 'rgb(239, 218, 110)',
               card3: 'rgb(164, 218, 195)',
@@ -33,6 +34,9 @@
             },
             fontFamily: {
               Manrope: "Manrope",
+            },
+            backgroundImage: {
+              discuss: "url(assets/bg.jpg)",
             }
           }
         }
@@ -106,7 +110,7 @@
         <img class="mx-auto" src="./assets/banner.png" alt="">
         <h1 class="text-3xl md:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
         <p class="font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wool, sleek metal and large windows that flood the space with natural light.</p>
-        <a class="btn btn-block mt-8 md:w-52 bg-rinterio-secondary rounded-3xl font-extrabold text-sm">Book Consult
+        <a class="btn btn-block mt-8 md:w-52 box-border bg-rinterio-banner rounded-3xl font-extrabold text-sm">View Details
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-rinterio-primary rounded-full p-1">
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
           </svg>
@@ -166,7 +170,7 @@
 
       <!-- Works Process section starts -->
        <section class="my-8 md:my-26 mx-5">
-        
+
         <div class="mb-8 text-center space-y-6">
           <!-- Text content -->
           <button class="btn btn-sm bg-white rounded-3xl">
@@ -214,6 +218,46 @@
             </div>
            </div>
        </section>
+
+       <!-- Let's Discuss section starts -->
+        <section class="bg-discuss">
+          <div class="md:w-3/4 mx-auto py-24">
+
+            <div class="mb-8 text-center space-y-6">
+              <!-- Text content -->
+              <button class="btn btn-sm bg-rinterio-secondary rounded-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+              Let's Connect</button>
+              <h2 class="text-2xl md:text-4xl font-bold">Let's Discuss Next Project</h2>
+                 <p class="font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wool, sleek metal accents.</p>
+            </div>
+  
+            <div class="my-8">
+              <!-- form container -->
+               <div>
+  
+                 <div class="flex flex-col md:flex-row gap-6">
+    
+                   <input type="text" placeholder="First Name*" class="input flex-1 box-border rounded-3xl bg-white" />
+                   <input type="text" placeholder="Last Name*" class="input flex-1 box-border rounded-3xl bg-white" />
+                 </div>
+                 <div class="flex flex-col md:flex-row gap-6">
+                  
+                   <input type="text" placeholder="Phone Number*" class="input flex-1 box-border rounded-3xl bg-white" />
+                   <input type="text" placeholder="Email Number*" class="input flex-1 box-border rounded-3xl bg-white" />
+                 </div>
+               </div>
+            </div>
+  
+            <a class="btn btn-block bg-rinterio-primary rounded-3xl font-extrabold text-sm">Send Mail
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-black rounded-full p-1 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+          </div>
+        </section>
 
       <!-- Footer Section -->
        <footer>
