@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03_Rinterio</title>
 
+    <!-- fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/5b8652802a.js" crossorigin="anonymous"></script>
+
     <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +16,6 @@
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
-
-      <style>
-        .manrope-font{
-            font-family: "Manrope", sans-serif;;
-
-        }
-      </style>
       
     <script>
       tailwind.config = {
@@ -31,52 +26,31 @@
               'rinterio-primary': 'rgb(171, 239, 95)',
               'rinterio-secondary': 'rgba(171, 239, 95, 0.5)',
               
-
+            },
+            fontFamily: {
+              Manrope: "Manrope",
             }
           }
         }
       }
     </script>
 </head>
-<body class="manrope-font">
+
+<body class="font-Manrope">
+
     <!-- Header Section -->
      <header class="md:container mx-auto">
-        <!-- navbar starts -->
 
-         <div class="navbar bg-base-100 mb-8">
+        <!-- navbar starts -->
+         <nav>
+          <div class="navbar bg-base-100 mb-8">
             <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-circle bg-white lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact Us</a></li>
-                    </ul>
-                </div>
-                <a class="rounded-3xl text-2xl font-extrabold">
+                <a href="#" class="rounded-3xl text-2xl font-extrabold">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-rinterio-primary rounded-full p-1 inline">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                     Rinterio
                 </a>
-              
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -87,45 +61,62 @@
                   <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <div class="navbar-end hidden lg:flex space-x-4">
-        
-                    <a class="btn btn-circle bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                      </svg>
-                    </a>
-                    <a class="btn btn-circle bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                      </svg>
-                    </a>
-                    <a class="btn bg-rinterio-primary rounded-3xl font-extrabold text-sm">Book Consult
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-black rounded-full p-1 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                      </svg>
-                    </a>
+            <div class="navbar-end">
+              <div class="hidden lg:flex space-x-4">
+                <a class="btn btn-circle bg-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+              </a>
+              <a class="btn btn-circle bg-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+              </a>
+              <a class="btn bg-rinterio-primary rounded-3xl font-extrabold text-sm">Book Consult
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-black rounded-full p-1 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+              </div>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-circle bg-white lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
                 </div>
+                <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </nav>
 
-            <!-- banner starts -->
-             <div class="mb-10 mx-5 text-center space-y-6">
-              <img class="mx-auto" src="./assets/banner.png" alt="">
-              <h1 class="text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
-              <p class="font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wool, sleek metal and large windows that flood the space with natural light.</p>
-              <a class="btn btn-block mt-8 md:w-52 bg-rinterio-secondary rounded-3xl font-extrabold text-sm">Book Consult
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-rinterio-primary rounded-full p-1">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
-            </a>
-             </div>
-     </header>
+      <!-- banner starts -->
+       <div class="mb-10 mx-5 text-center space-y-6">
+        <img class="mx-auto" src="./assets/banner.png" alt="">
+        <h1 class="text-3xl md:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+        <p class="font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wool, sleek metal and large windows that flood the space with natural light.</p>
+        <a class="btn btn-block mt-8 md:w-52 bg-rinterio-secondary rounded-3xl font-extrabold text-sm">Book Consult
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-rinterio-primary rounded-full p-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </a>
+      </div>
+    </header>
 
      <!-- Main Section -->
       <main class="md:container mx-auto">
+
         <!-- About Us section starts -->
          <section class="flex flex-col md:flex-row gap-9 my-8 md:my-24 mx-5">
 
-          <div class="relative space-y-6">
+          <div class="flex-1 relative space-y-6">
             <!-- Text content -->
             <img class="absolute -left-12 -top-10 hidden md:block" src="assets/Vector.png" alt="">
              <button class="btn btn-sm bg-white rounded-3xl">
@@ -133,7 +124,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>
             About Us</button>
-             <h2 class="text-4xl text-center md:text-left font-bold">We design thoughtful, liveable spaces</h2>
+             <h2 class="text-2xl md:text-4xl text-center md:text-left font-bold">We design thoughtful, liveable spaces</h2>
              <p class=" text-center md:text-left font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wool, sleek metal accents.</p>
              <!-- Card 1 -->
              <div class="flex gap-6 p-6 bg-white rounded-2xl">
@@ -143,9 +134,8 @@
               </div>
               <div>
                 <!-- Text content -->
-                 <h3 class="text-lg font-extrabold mb-3">Commercial</h3>
+                 <h3 class="md:text-lg font-extrabold mb-3">Commercial</h3>
                  <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
-
               </div>
              </div>
              <!-- Card 2 -->
@@ -156,20 +146,20 @@
               </div>
               <div>
                 <!-- Text content -->
-                 <h3 class="text-lg font-extrabold mb-3">Residential</h3>
+                 <h3 class="md:text-lg font-extrabold mb-3">Residential</h3>
                  <p class="font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
-
               </div>
              </div>
-
           </div>
-          <div>
+          
+          <div class="flex-1">
             <!-- Image content -->
              <img src="assets/Rectangle.png" alt="">
           </div>
          </section>
 
       </main>
+
       <!-- Footer Section -->
        <footer>
 
